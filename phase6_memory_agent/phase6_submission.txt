@@ -1,0 +1,55 @@
+Phase 6: Planning, Memory and Context
+
+Objective:
+The objective of Phase 6 was to enhance the AI Portfolio Copilot by introducing memory, planning, and context retention to support multi-turn conversations.
+
+Implementation:
+
+A session-based memory system was implemented using a JSON file (session_memory.json). The system stores:
+- Client risk profile
+- Investment horizon
+- Financial goal
+- Conversation history
+
+Additionally, a simple planning mechanism was introduced. Before generating a response, the system creates a plan based on:
+- User query intent
+- Available client context
+
+Example planning steps include:
+- Use stored client profile context
+- Check alignment between portfolio and risk profile
+- Summarize key advisory discussion points
+
+Multi-Turn Conversation:
+
+A three-step conversation was tested:
+1. User provided client profile information
+2. User asked about portfolio suitability
+3. User asked about next review meeting discussion
+
+The system retained the client profile and applied it in subsequent queries.
+
+Comparison:
+
+Two modes were evaluated:
+1. Without Memory
+2. With Memory and Planning
+
+Observed Improvements:
+
+- The system retained important client details across queries
+- Responses became more personalized and context-aware
+- Follow-up answers were more relevant to the client’s financial profile
+- Planning steps improved response structure and clarity
+- Advisory outputs became more aligned with real-world financial discussions
+
+Memory Retention and Reset Rules:
+
+- Memory is stored in session_memory.json
+- It persists during the active session
+- Includes both client profile and conversation history
+- Memory should be reset before starting a new client session to avoid mixing contexts
+
+Conclusion:
+
+Phase 6 successfully introduced memory and planning capabilities into the AI Portfolio Copilot. This significantly improved the system’s ability to handle multi-turn interactions and produce context-aware responses, making it more suitable for real-world financial advisory scenarios.

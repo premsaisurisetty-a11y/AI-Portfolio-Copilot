@@ -1,0 +1,21 @@
+# API keys and environment variables
+.env
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit config and local caches
+.streamlit/
+*.log
+
+# Project runtime memory & logs
+phase8_deployment/session_memory.json
+phase8_deployment/feedback_memory.json
+phase8_deployment/logs/
+Logs/
+
+# System generated task assets
+.system_generated/

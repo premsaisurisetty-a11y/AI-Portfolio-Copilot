@@ -1,0 +1,88 @@
+Phase 6: Memory and Planning Comparison
+
+Objective:
+To evaluate how memory and planning improve multi-turn conversation quality in the AI Portfolio Copilot.
+
+--------------------------------------------------
+
+Scenario:
+A three-step interaction was tested:
+
+1. User provided client profile:
+   - Risk Profile: Moderate
+   - Investment Horizon: 10 years
+   - Goal: Wealth creation
+
+2. User asked:
+   "Is this portfolio suitable for the client?"
+
+3. User asked:
+   "What should I discuss with the client in the next review meeting?"
+
+--------------------------------------------------
+
+Comparison:
+
+Question 1: Client Profile Input
+
+Without Memory:
+The system treated the input as a standalone statement and did not retain it for future use.
+
+With Memory + Planning:
+The system captured and stored the client profile (risk, horizon, goal) in session memory for future reference.
+
+Improvement:
+The system established reusable context for subsequent questions.
+
+--------------------------------------------------
+
+Question 2: Portfolio Suitability
+
+Without Memory:
+The response was generic and requested more information about the client’s profile.
+
+With Memory + Planning:
+The system used stored client context (moderate risk, 10-year horizon, wealth creation goal) and applied planning logic:
+- Use stored client profile context
+- Check alignment between allocation and risk profile
+
+The response was more relevant and aligned with the client’s characteristics.
+
+Improvement:
+The system provided a more personalized and context-aware answer.
+
+--------------------------------------------------
+
+Question 3: Review Meeting Discussion
+
+Without Memory:
+The response was generic and unrelated to financial advisory context (e.g., general project discussion topics).
+
+With Memory + Planning:
+The system used stored client profile and generated structured advisory points such as:
+- Reviewing risk alignment
+- Evaluating portfolio performance
+- Discussing investment horizon and goals
+- Assessing asset allocation
+
+Planning Steps Used:
+- Use stored client profile context
+- Summarize key talking points for advisor meeting
+
+Improvement:
+The response became practical, relevant, and aligned with real-world wealth management workflows.
+
+--------------------------------------------------
+
+Memory Retention and Reset Behavior:
+
+- Memory is stored in a local file (session_memory.json)
+- The system retains client profile and conversation history during the session
+- Memory persists across multiple queries within the session
+- Memory should be reset before starting a new client interaction to avoid context leakage
+
+--------------------------------------------------
+
+Conclusion:
+
+The introduction of memory and planning significantly improved the AI system’s ability to handle multi-turn conversations. The system was able to retain client-specific context and use it effectively in follow-up responses, making the outputs more personalized, relevant, and suitable for real-world advisory use.

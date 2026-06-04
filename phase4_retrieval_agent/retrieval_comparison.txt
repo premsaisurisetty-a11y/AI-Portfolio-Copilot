@@ -1,0 +1,79 @@
+Phase 4 Retrieval Comparison
+
+Question 1:
+Why did this portfolio underperform last quarter?
+
+Without Retrieval:
+The answer was generic and stated that more portfolio details would usually be needed to explain underperformance. It referred broadly to market conditions and investment strategy without using actual portfolio facts.
+
+With Retrieval:
+The answer used retrieved portfolio and market context. It specifically referred to:
+- weakness in midcap and international allocations
+- volatility in domestic equity markets
+- technology sector valuation pressure
+- the portfolio’s actual structure and market backdrop
+
+Improvement:
+The response became more grounded, specific, and useful for advisory purposes.
+
+--------------------------------------------------
+
+Question 2:
+Is this portfolio suitable for a moderate-risk client?
+
+Without Retrieval:
+The answer was general and said that portfolio suitability could not be assessed without more information about holdings, risk tolerance, and goals.
+
+With Retrieval:
+The answer used retrieved information from:
+- client_profile.txt
+- portfolio_notes.txt
+
+It referenced:
+- moderate risk profile
+- 10-year investment horizon
+- wealth creation objective
+- current allocation of 70% equity, 20% debt, and 10% cash
+- concentration in technology and financials
+
+Improvement:
+The response became personalized and more practical because it evaluated suitability using the available client and portfolio information.
+
+--------------------------------------------------
+
+Question 3:
+What should I discuss with the client in the next review meeting?
+
+Without Retrieval:
+The answer provided a broad list of generic discussion points relevant to financial planning and client meetings.
+
+With Retrieval:
+The answer became portfolio-specific and focused on:
+- sector concentration in technology and financials
+- recent underperformance due to midcap and international allocation weakness
+- current asset allocation
+- major holdings
+- alignment with the client’s long-term wealth creation objective
+- maintaining disciplined long-term investing
+
+Improvement:
+The response became more relevant, structured, and directly usable in an actual portfolio review meeting.
+
+--------------------------------------------------
+
+Question 4:
+What is the gold allocation in this portfolio?
+
+Without Retrieval:
+The answer asked for more information and remained generic.
+
+With Retrieval:
+The system clearly stated that the provided context does not include information about gold allocation in the client’s portfolio.
+
+Improvement:
+This demonstrates safer handling of missing information and a reduction in hallucination risk.
+
+--------------------------------------------------
+
+Overall Observation:
+Without retrieval, the system produced generic financial advisory responses. With retrieval, the system generated grounded, portfolio-aware, and client-aware responses. This improved explainability, practical usefulness, and safety.

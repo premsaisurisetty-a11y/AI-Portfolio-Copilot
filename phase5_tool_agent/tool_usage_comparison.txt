@@ -1,0 +1,68 @@
+Phase 5 Tool Usage Comparison
+
+Question 1:
+Is this portfolio allocation suitable?
+
+Without Tools:
+The system provided a generic response asking for more details about allocation, financial goals, and risk tolerance. It was unable to give a direct answer.
+
+With Tools:
+The system directly evaluated the portfolio allocation and concluded:
+"Allocation is suitable for a moderate-risk profile."
+
+Improvement:
+The tool-enabled response eliminated ambiguity and provided a clear decision based on predefined logic.
+
+--------------------------------------------------
+
+Question 2:
+Is there any sector concentration risk?
+
+Without Tools:
+The system explained what sector concentration risk is and how it should generally be managed. The response was descriptive but not specific to the portfolio.
+
+With Tools:
+The system analyzed sector exposure and identified:
+"High concentration risk in: Technology"
+
+Improvement:
+The response became precise, actionable, and portfolio-specific, enabling immediate decision-making.
+
+--------------------------------------------------
+
+Question 3:
+What should I discuss with the client?
+
+Without Tools:
+The system provided general financial planning topics such as goals, risk tolerance, and financial situation.
+
+With Tools:
+The system combined LLM reasoning with portfolio context and provided a structured discussion list including:
+- financial goals
+- current financial situation
+- risk tolerance
+- portfolio review
+- tax planning
+- estate planning
+
+Improvement:
+The response remained comprehensive but became more structured and advisor-oriented.
+
+--------------------------------------------------
+
+Overall Comparison:
+
+Without Tools:
+- Generic responses
+- No calculations or validations
+- Requires more user input
+- Limited decision support
+
+With Tools:
+- Direct portfolio evaluation
+- Quantitative logic applied
+- Clear and actionable outputs
+- Reduced dependency on user input
+
+Key Insight:
+Tool integration enables the system to move beyond language-based responses and perform real financial analysis, significantly improving the quality and reliability of advisory outputs.

@@ -1,0 +1,8 @@
+Phase 3 – LLM Agent
+
+This phase improves on the baseline by using better prompt structuring and clearer response formatting. The LLM agent is designed to provide more relevant and professional portfolio-related answers compared to the simple baseline setup.
+
+Files included:
+- llm_agent.py
+- prompt_comparison.txt
+- supporting screenshots in Logs folder

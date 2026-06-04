@@ -1,0 +1,52 @@
+Phase 5: Tool Integration
+
+Objective:
+The objective of Phase 5 was to enhance the AI Portfolio Copilot by integrating analytical tools that enable the system to perform direct portfolio evaluation rather than relying solely on language model responses.
+
+Implementation:
+Two financial tools were implemented:
+
+1. Asset Allocation Checker:
+   - Evaluates the suitability of portfolio allocation (equity, debt, cash)
+   - Compares allocation against the client’s risk profile
+   - Provides a direct suitability decision
+
+2. Risk Concentration Checker:
+   - Analyzes sector-wise exposure
+   - Identifies sectors with concentration above threshold levels
+   - Flags high-risk concentration areas
+
+The system uses conditional logic to route queries:
+- Allocation-related queries → Asset Allocation Tool
+- Risk/concentration queries → Risk Checker Tool
+- General advisory queries → LLM fallback
+
+Questions Tested:
+1. Is this portfolio allocation suitable?
+2. Is there any sector concentration risk?
+3. What should I discuss with the client?
+
+Comparison Approach:
+Each query was tested in two modes:
+- Without Tools (LLM only)
+- With Tools (Tool-assisted responses)
+
+Observed Improvements:
+- Without tools:
+  - Responses were generic and descriptive
+  - Required additional input from user
+  - No direct evaluation performed
+
+- With tools:
+  - Provided direct and precise outputs
+  - Evaluated allocation suitability based on risk profile
+  - Identified high concentration in the technology sector
+  - Reduced dependency on additional user inputs
+
+Hybrid Intelligence:
+The system demonstrated hybrid behavior:
+- Used tools for structured financial evaluation
+- Used LLM for open-ended advisory queries
+
+Conclusion:
+Tool integration significantly improved the system’s capability by transforming it from a passive advisory assistant into an active decision-support system. The AI can now perform real-time portfolio checks, identify risks, and provide actionable insights, making it more aligned with real-world wealth management workflows.

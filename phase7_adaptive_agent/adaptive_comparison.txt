@@ -1,0 +1,62 @@
+Phase 7: Adaptive Behaviour Comparison
+
+Objective:
+To evaluate how the AI Portfolio Copilot adapts its response style based on user feedback and improves output quality over time.
+
+--------------------------------------------------
+
+Test Scenario:
+
+Query:
+"What should I discuss with the client in the next review meeting?"
+
+User Feedback:
+"Please make the answer more concise, structured in bullet points, and include caution where needed."
+
+--------------------------------------------------
+
+Before Adaptation:
+
+The system generated a standard professional response in paragraph format. While the answer was informative, it was:
+- relatively lengthy
+- less structured
+- not aligned with the user’s preferred communication style
+
+--------------------------------------------------
+
+After Adaptation:
+
+The system incorporated the feedback and updated its response behavior based on the stored preferences:
+
+- Response Style: concise
+- Format: bullet points
+- Include Caution: enabled
+
+As a result, the updated response was:
+- shorter and more focused
+- clearly structured using bullet points
+- more suitable for advisor communication
+- aligned with user expectations
+
+--------------------------------------------------
+
+Key Improvements:
+
+1. The response became concise and easier to read
+2. Information was presented in structured bullet points
+3. A more cautious and advisory tone was introduced
+4. The output aligned better with professional wealth management communication
+
+--------------------------------------------------
+
+Adaptation Mechanism:
+
+- User feedback was captured and stored in a local file (feedback_memory.json)
+- The stored preferences were applied through dynamic prompt modification
+- Subsequent responses reflected these updated preferences
+
+--------------------------------------------------
+
+Conclusion:
+
+The introduction of adaptive behaviour significantly improved response quality by aligning outputs with user preferences. This demonstrates the system’s ability to evolve over time and deliver more relevant, user-centric advisory responses in a real-world workflow.

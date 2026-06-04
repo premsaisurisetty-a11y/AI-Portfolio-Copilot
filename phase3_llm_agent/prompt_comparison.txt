@@ -1,0 +1,26 @@
+Phase 3 Prompt Comparison
+
+Prompt v1_basic:
+- Simple and readable responses
+- Lacks structure
+- Limited risk awareness
+- Generic advisory output
+
+Prompt v2_structured:
+- Improved clarity and control
+- Better alignment with portfolio advisory
+- Includes some caution
+- Still moderately generic
+
+Prompt v3_safety_first:
+- Highly structured (Summary, Key Reason, Risk, Next Step)
+- Strong risk awareness
+- Explicitly avoids assumptions
+- Provides actionable guidance
+- Best suited for financial advisory context
+
+Final Selection:
+v3_safety_first
+
+Justification:
+This prompt provides the best combination of clarity, safety, structure, and professional advisory tone. It ensures responsible AI behavior and aligns closely with real-world wealth management workflows.

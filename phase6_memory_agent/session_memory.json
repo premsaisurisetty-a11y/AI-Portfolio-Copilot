@@ -1,0 +1,11 @@
+{
+  "client_name": null,
+  "risk_profile": "Moderate",
+  "investment_horizon": "10 years",
+  "goal": "Wealth creation",
+  "conversation_history": [
+    "The client has a moderate risk profile, a 10 years horizon, and a wealth creation goal.",
+    "Is this portfolio suitable for the client?",
+    "What should I discuss with the client in the next review meeting?"
+  ]
+}

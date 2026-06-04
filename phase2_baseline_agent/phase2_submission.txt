@@ -1,0 +1,53 @@
+Phase 2: Basic Working Agent
+Objective
+The objective of Phase 2 was to build a basic working AI agent capable of accepting user inputs and generating responses. This version serves as a baseline system to demonstrate initial functionality and identify limitations.
+
+Implementation Approach
+- A rule-based Python agent was developed using simple conditional logic (if-else statements). The agent processes user queries by identifying keywords and generating predefined responses.
+- The system operates as a command-line interface (CLI), where users can input portfolio-related queries and receive responses.
+- The agent operates in a controlled environment and ensures safe responses by avoiding execution of financial actions and providing advisory-only outputs.
+
+Key Features
+•	Accepts natural language input from the user 
+•	Generates responses based on keyword matching 
+•	Handles basic portfolio-related queries such as: 
+o	performance explanation 
+o	allocation checks 
+o	risk identification 
+o	client communication guidance 
+•	Includes safe handling for unsupported queries 
+
+Sample Interaction Logs
+Q1: Why did my portfolio underperform?
+A: The portfolio may have underperformed due to sector allocation or market conditions. Detailed analysis requires benchmark comparison.
+
+Q2: Is my allocation correct?
+A: The portfolio allocation should be aligned with the client's risk profile. Please review equity, debt, and cash distribution.
+
+Q3: What should I tell the client?	
+A: For client discussions, focus on performance, risk, and alignment with financial goals.
+
+Q4 (Failure Case): Compare my portfolio with Nifty returns
+A: I'm unable to provide a detailed answer. Please provide more specific portfolio-related queries.
+
+Baseline Limitations
+1.	Lack of Understanding:
+The agent relies on keyword matching and does not truly understand user queries. 
+2.	No Data Integration:
+The system cannot process actual portfolio data or perform calculations such as returns or benchmark comparisons. 
+3.	No Context Retention:
+The agent treats each query independently and cannot maintain conversation history. 
+4.	Generic Responses:
+Responses are not personalized and remain the same across different users and scenarios. 
+
+Why This Version Is Insufficient
+The baseline agent is not suitable for real-world advisory use due to its limited intelligence and lack of data integration. It cannot analyze portfolio data, provide meaningful insights, or support multi-step reasoning.
+This highlights the need for:
+•	Large Language Model (LLM) integration for better understanding 
+•	Retrieval systems for accessing portfolio and market data 
+•	Tool usage for performing calculations 
+•	Memory handling for contextual conversations 
+
+Conclusion
+The Phase 2 baseline agent successfully demonstrates the basic workflow of an AI system. However, it lacks the capabilities required for real-world financial advisory use, thereby justifying the need for further enhancements in subsequent phases.
+

@@ -1,0 +1,16 @@
+Ask your question: compare my portfolio returns with nifty50 returns
+Agent: I'm unable to provide a detailed answer. Please provide more specific portfolio-related queries.
+--------------------------------------------------
+Ask your question: why did my portfolio underperform?
+Agent: The portfolio may have underperformed due to sector allocation or market conditions. Detailed analysis requires benchmark comparison.
+--------------------------------------------------
+Ask your question: Is my allocation correct?     
+Agent: The portfolio allocation should be aligned with the client's risk profile. Please review equity, debt, and cash distribution.
+--------------------------------------------------
+Ask your question: what should i tell the client
+Agent: For client discussions, focus on performance, risk, and alignment with financial goals.
+--------------------------------------------------
+Ask your question: compare my portfolio return with Nifty50 returns
+Agent: I'm unable to provide a detailed answer. Please provide more specific portfolio-related queries.
+--------------------------------------------------
+Ask your question: 

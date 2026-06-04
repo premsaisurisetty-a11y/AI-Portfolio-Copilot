@@ -1,0 +1,47 @@
+Phase 7: Adaptive Behaviour
+
+Objective:
+The objective of this phase was to enhance the AI Portfolio Copilot by enabling it to adapt its responses based on user feedback, thereby improving usability and alignment with user expectations.
+
+Implementation:
+
+A feedback-driven adaptation mechanism was implemented using a local JSON file (feedback_memory.json). The system captures and stores user preferences, including:
+
+- Response style (e.g., concise or detailed)
+- Output format (e.g., paragraph or bullet points)
+- Inclusion of caution or risk-related statements
+
+These preferences are then incorporated into the system prompt, allowing the language model to adjust its responses dynamically.
+
+Test Setup:
+
+A sample advisory query was tested before and after applying user feedback:
+
+Query:
+"What should I discuss with the client in the next review meeting?"
+
+Feedback Provided:
+"Please make the answer more concise, structured in bullet points, and include caution where needed."
+
+Observed Behaviour:
+
+Before Adaptation:
+- Response was general and paragraph-based
+- Limited structure and readability
+- Not tailored to user preference
+
+After Adaptation:
+- Response became concise and structured
+- Bullet-point format improved clarity
+- Tone became more advisory and cautious
+- Output aligned with professional communication standards
+
+Feedback Retention:
+
+- Feedback is stored persistently in feedback_memory.json
+- Preferences are reused for subsequent queries
+- This simulates a learning mechanism within the agent
+
+Conclusion:
+
+Phase 7 successfully introduced adaptive behaviour into the AI Portfolio Copilot. By incorporating user feedback into future responses, the system demonstrates improved personalization and practical usability. This capability is critical for real-world applications where user preferences and communication styles vary across clients and use cases.

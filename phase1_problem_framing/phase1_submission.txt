@@ -1,0 +1,23 @@
+Phase 1 – Problem Framing
+
+Objective:
+To define the portfolio copilot problem statement and identify the core use cases for the assistant.
+
+Problem Statement:
+The system is designed as an AI-powered portfolio copilot for wealth management support. It should help with portfolio review, client suitability context, market outlook interpretation, retrieval-based question answering, memory-aware responses, and adaptive behavior based on feedback.
+
+Inputs Identified:
+1. Client profile
+2. Market outlook
+3. Portfolio notes
+
+Expected Capabilities:
+1. Baseline response generation
+2. Improved LLM-based structured responses
+3. Retrieval-based factual grounding
+4. Tool-assisted support
+5. Session memory
+6. Adaptive behavior using feedback memory
+
+Deliverable:
+A phased implementation from baseline agent to adaptive portfolio copilot.

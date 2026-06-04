@@ -1,0 +1,45 @@
+Phase 4: Add Knowledge and Retrieval
+
+Objective:
+The objective of Phase 4 was to improve the AI Portfolio Copilot by adding retrieval capabilities so that responses could be grounded in portfolio-specific, market-specific, and client-specific information.
+
+Implementation:
+A retrieval-augmented generation (RAG) workflow was implemented using text-based knowledge files and TF-IDF based retrieval. The following input files were prepared and stored in the project data folder:
+1. portfolio_notes.txt
+2. market_outlook.txt
+3. client_profile.txt
+
+The documents were divided into smaller chunks and indexed using TF-IDF vectorization. For each user query, the system retrieved the most relevant chunks and supplied them to the language model as context before generating the final answer.
+
+Questions Tested:
+1. Why did this portfolio underperform last quarter?
+2. Is this portfolio suitable for a moderate-risk client?
+3. What should I discuss with the client in the next review meeting?
+4. What is the gold allocation in this portfolio?
+
+Comparison Approach:
+The same questions were tested in two modes:
+- Without Retrieval
+- With Retrieval
+
+Observed Improvements:
+- Without retrieval, responses were general and based on broad financial reasoning.
+- With retrieval, responses became more grounded and referenced portfolio-specific details such as:
+  - equity, debt, and cash allocation
+  - weakness in midcap and international allocations
+  - higher concentration in technology and financials
+  - client risk profile, investment horizon, and wealth creation objective
+- The review-meeting answer became more practical and specific when retrieval was enabled.
+- The suitability assessment became more personalized because the retrieved context included the client’s moderate-risk profile and 10-year investment horizon.
+
+Missing Information Handling:
+A missing-information test was included using the question:
+“What is the gold allocation in this portfolio?”
+
+The knowledge base did not include any gold-related information. In retrieval mode, the system correctly stated that the provided context did not contain information about gold allocation. This demonstrated safer behavior and reduced hallucination risk.
+
+Technical Note:
+Due to dependency conflicts in the execution environment, retrieval was implemented using TF-IDF based similarity instead of transformer embeddings. This still enabled relevant document retrieval and grounded response generation.
+
+Conclusion:
+Phase 4 significantly improved the quality of the AI Portfolio Copilot by grounding answers in available portfolio, market, and client information. Retrieval reduced generic responses, improved practical usefulness, and strengthened safety by explicitly handling cases where relevant information was missing.

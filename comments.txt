@@ -1,0 +1,5 @@
+Comments:
+
+I come from a non-technical background and have developed this project with conceptual understanding and structured guidance. I have taken support from AI tools such as ChatGPT to understand implementation steps, while ensuring the logic, structure, and outputs are fully understood and verified by me.
+
+The project demonstrates a phased implementation from a baseline agent to an adaptive portfolio copilot using memory and feedback mechanisms.
